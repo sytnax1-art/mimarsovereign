@@ -1,3 +1,5 @@
+![Demo](assets/demo.svg)
+
 # MimarSovereign v8.0 — Demo Landing
 
 A focused, static demo that showcases the "space-age" MimarSovereign visual concept without revealing proprietary source. Designed to attract attention on GitHub and act as a demo gateway to private, high-value projects.
