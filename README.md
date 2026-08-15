@@ -1,52 +1,94 @@
 ![Demo](assets/demo.svg)
 
-# MimarSovereign v8.0 — Demo Landing
+# MimarSovereign v8.0
 
-A focused, static demo that showcases the "space-age" MimarSovereign visual concept without revealing proprietary source. Designed to attract attention on GitHub and act as a demo gateway to private, high-value projects.
+A focused public demo for a private AI operations platform: a control layer that turns intent into validated execution, across tools, workflows, and decision points.
 
-Highlights
-- Small, fast static landing: index.html + styles + JS (no backend required).
-- Interactive states (Awaken / Calibrate / Manifest) and animated orbital visuals.
-- Suitable for GitHub Pages so the demo is visible immediately to visitors.
+MimarSovereign is positioned as a system for AI-driven orchestration rather than a simple chatbot. The public-facing repository showcases the visual identity and demo experience, while the production system remains private and protected behind a proprietary implementation.
 
-Run locally
+## What this project demonstrates
 
-Open `index.html` in a browser or serve locally:
+- A high-contrast, futuristic landing page for product storytelling and investor attention.
+- Interactive states: Awaken, Calibrate, and Manifest.
+- A strong public “teaser” layer that exposes the brand without revealing the core engine.
+- A GitHub Pages deployment model suitable for quick proof-of-concept visibility.
+
+## Product positioning
+
+Most AI tools today are either:
+
+- assistant interfaces that generate content but do not own execution,
+- workflow tools that automate steps without strategic coordination,
+- or prototyping platforms that accelerate demos without real operational governance.
+
+MimarSovereign is different: it is designed as an orchestration layer for intent-driven systems.
+
+The public-facing demo communicates the concept, while the private implementation is intended to include:
+
+- goal-oriented planning and state management,
+- tool coordination and execution routing,
+- approval gates and safety boundaries,
+- observability, traceability, and operational logging,
+- private deployment patterns for high-value production environments.
+
+## Why the public repo stays lean
+
+This repository is intentionally public-facing and intentionally limited. We keep the proprietary engine private to protect:
+
+- system architecture,
+- domain-specific logic,
+- security and validation layers,
+- operational trade secrets,
+- and strategic product execution paths.
+
+The public repo serves as a demo gateway: enough to signal capability, attract attention, and establish interest without exposing the actual product engine.
+
+## Run locally
+
+Open `index.html` directly in a browser, or serve it locally:
 
 ```bash
 python -m http.server 8000
 ```
 
-Visit `http://localhost:8000` to preview.
+Then visit:
 
-Publish as a public demo (recommended)
-
-This repository includes a GitHub Actions workflow (.github/workflows/pages.yml) that deploys the site to GitHub Pages when this branch is pushed. Steps to publish:
-
-1. Push this branch to GitHub:
-
-```bash
-git add -A && git commit -m "Publish demo and pages workflow\n\nCo-authored-by: Copilot App <223556219+Copilot@users.noreply.github.com>" && git push -u origin sytnax1-art-repository-repair
+```text
+http://localhost:8000
 ```
 
-2. Wait a minute for the Pages deployment action to complete.
-3. The demo will be available at `https://<your-github-username>.github.io/<repo-name>/` once Pages finishes.
+## Publish to GitHub Pages
 
-What to include publicly (suggestions)
+This repository already includes a Pages workflow in `.github/workflows/pages.yml`.
 
-- Keep proprietary code private. Publish only demo assets: built static site, GIF/video walkthroughs, artwork, and a polished README that teases the underlying tech.
-- Add a short demo GIF (assets/demo.gif) and a 20–30s MP4 (assets/demo.mp4) showing interaction; these attract attention in the repo listing.
+1. Push the branch to GitHub.
+2. Wait for the GitHub Actions deployment to complete.
+3. Your demo will be published under the GitHub Pages URL for the repository.
 
-Promotion tips
+Example:
 
-- Write an evocative repo description and pin the repo on your GitHub profile.
-- Create a short, shareable GIF (1600×900 or 1280×720) and put it near the top of the README.
-- Add topics (e.g., webgl, interactive, demo, art, ui) and a concise tagline.
-- Post a short announcement (Twitter/X, Mastodon, LinkedIn) linking to the GitHub Pages demo.
+```text
+https://<your-github-username>.github.io/<repo-name>/
+```
 
-If you want, I can:
-- Add a `assets/` folder and placeholder GIF/MP4 files.
-- Commit & push everything and monitor the Pages deployment action.
-- Create a polished README hero section with a GIF embedded.
+## Recommended public strategy
 
-Hangi adımı istersin? (örn. "Push ve deploy et", "GIF/MP4 placeholder ekle", "README hero GIF ekle")
+Keep the public story focused on:
+
+- visual identity
+- product concept
+- operational AI narrative
+- high-signal demo interactions
+- polished brand storytelling
+
+Keep private:
+
+- source code
+- orchestration engine
+- business logic
+- security checks
+- real deployment architecture
+
+## Summary
+
+This repository is not the product itself; it is the public-facing front door to the product story. It is designed to look premium, signal technological ambition, and generate interest while preserving the real value behind a private implementation.
