@@ -48,32 +48,16 @@ function renderState(key) {
   const state = phaseMap[key];
   if (!state) return;
 
-  if (phaseValue) phaseValue.textContent = state.phase;
-  if (modeValue) modeValue.textContent = state.mode;
-  if (realityValue) realityValue.textContent = state.reality;
-  if (signalValue) signalValue.textContent = state.signal;
-  if (statusPill) statusPill.textContent = state.status;
-  if (directiveList) {
-    directiveList.innerHTML = state.directives.map((item) => `<li>${item}</li>`).join('');
-  }
-
-  for (const button of document.querySelectorAll('button[data-phase]')) {
-    const isActive = button.dataset.phase === key;
-    button.setAttribute('aria-pressed', String(isActive));
-    button.classList.toggle('is-active', isActive);
-  }
+  phaseValue.textContent = state.phase;
+  modeValue.textContent = state.mode;
+  realityValue.textContent = state.reality;
+  signalValue.textContent = state.signal;
+  statusPill.textContent = state.status;
+  directiveList.innerHTML = state.directives.map((item) => `<li>${item}</li>`).join('');
 }
 
-function init() {
-  for (const button of document.querySelectorAll('button[data-phase]')) {
-    button.addEventListener('click', () => renderState(button.dataset.phase));
-  }
-
-  renderState('calibrate');
+for (const button of document.querySelectorAll('button[data-phase]')) {
+  button.addEventListener('click', () => renderState(button.dataset.phase));
 }
 
-if (document.readyState === 'loading') {
-  document.addEventListener('DOMContentLoaded', init);
-} else {
-  init();
-}
+renderState('calibrate');
