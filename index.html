@@ -6,7 +6,6 @@
     <meta name="description" content="MimarSovereign — interactive concept UI showing phases and directives." />
     <title>MimarSovereign v8.0</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" href="favicon.ico" />
   </head>
   <body>
     <div class="aurora" aria-hidden="true"></div>
@@ -16,7 +15,6 @@
           <p class="eyebrow">TRANSCENDENCE_CONTINUUM</p>
           <h1>MimarSovereign v8.0</h1>
         </div>
-        <!-- role/aria-live ekledik; JS de textContent değiştirdiğinde ekran okuyucuya bildirilecek -->
         <span class="signal-pill" id="status-pill" role="status" aria-live="polite" aria-atomic="true">CONVERGENCE_LOCKED</span>
       </header>
 
@@ -30,7 +28,6 @@
           </p>
           <div class="button-row" role="tablist" aria-label="Phase controls">
             <button class="primary" data-phase="awaken" aria-pressed="false">Awaken</button>
-            <!-- calibrate başlangıçta aktif -->
             <button class="secondary is-active" data-phase="calibrate" aria-pressed="true">Calibrate</button>
             <button class="ghost" data-phase="manifest" aria-pressed="false">Manifest</button>
           </div>
@@ -47,7 +44,6 @@
       <section class="stats-grid">
         <article class="panel stat-card">
           <p>Phase</p>
-          <!-- HTML başlangıç değeri JS varsayılısına uyar -->
           <strong id="phase-value">CALIBRATED</strong>
         </article>
         <article class="panel stat-card">
@@ -69,7 +65,6 @@
           <p class="section-tag">MANIFESTATION_CORE</p>
           <h3>Core directives</h3>
         </div>
-        <!-- directive-list için de aria-live: değiştiğinde bildirilsin -->
         <ul id="directive-list" aria-live="polite" aria-atomic="false">
           <li>Boundaries are dissolved. The field is self-coherent.</li>
           <li>Tools are no longer separate from thought.</li>
