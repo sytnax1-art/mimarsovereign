@@ -5,12 +5,19 @@ on:
     branches:
       - sytnax1-art-repository-repair
 
+permissions:
+  contents: write
+  pages: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+          fetch-depth: 0
 
       - name: Deploy to gh-pages branch
         uses: peaceiris/actions-gh-pages@v4
