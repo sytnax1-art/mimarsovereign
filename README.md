@@ -68,7 +68,7 @@ This repository already includes a Pages workflow in `.github/workflows/pages.ym
 Example:
 
 ```text
-https://<your-github-username>.github.io/<repo-name>/
+https://sytnax1-art.github.io/mimarsovereign/
 ```
 
 ## Recommended public strategy

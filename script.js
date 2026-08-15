@@ -44,6 +44,16 @@ const signalValue = document.getElementById('signal-value');
 const statusPill = document.getElementById('status-pill');
 const directiveList = document.getElementById('directive-list');
 
+if (statusPill) {
+  statusPill.setAttribute('role', 'status');
+  statusPill.setAttribute('aria-live', 'polite');
+  statusPill.setAttribute('aria-atomic', 'true');
+}
+if (directiveList) {
+  directiveList.setAttribute('aria-live', 'polite');
+  directiveList.setAttribute('aria-atomic', 'false');
+}
+
 function renderState(key) {
   const state = phaseMap[key];
   if (!state) return;

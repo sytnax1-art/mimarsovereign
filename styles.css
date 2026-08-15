@@ -288,3 +288,26 @@ button.ghost {
     grid-template-columns: 1fr;
   }
 }
+
+button.is-active {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 22px 40px rgba(103, 232, 249, 0.28);
+}
+
+button:focus {
+  outline: none;
+}
+button:focus-visible {
+  outline: 3px solid rgba(103, 232, 249, 0.45);
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .orb-core,
+  .ring-1, .ring-2, .ring-3,
+  button {
+    animation: none !important;
+    transition: none !important;
+  }
+}
